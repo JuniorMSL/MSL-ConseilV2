@@ -47,11 +47,11 @@ export default function MethodeHero() {
                     </span>
                 </p>
 
-                <div className="hero-animate flex flex-col sm:flex-row gap-5 justify-center">
+                {/* <div className="hero-animate flex flex-col sm:flex-row gap-5 justify-center">
                     <button className="px-8 py-4 bg-secondary text-primary rounded-full font-bold uppercase tracking-wider text-xs hover:bg-white transition-colors duration-300 shadow-xl hover:scale-105">
                         Découvrir la méthode
                     </button>
-                </div>
+                </div> */}
             </div>
 
             {/* Scroll Indicator */}

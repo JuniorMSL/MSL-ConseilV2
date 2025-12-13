@@ -29,6 +29,43 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## 🔍 SEO
+
+Ce projet inclut une **implémentation SEO complète et professionnelle** pour optimiser le référencement naturel.
+
+### 📚 Documentation SEO
+
+**Point d'entrée :** [SEO_INDEX.md](SEO_INDEX.md) - Index principal de toute la documentation SEO
+
+#### Fichiers disponibles :
+- 🗺️ **[SEO_ARCHITECTURE.md](SEO_ARCHITECTURE.md)** - Vue d'ensemble de l'architecture (COMMENCER ICI)
+- 📋 **[SEO_RECAP.md](SEO_RECAP.md)** - Récapitulatif de l'implémentation
+- 📖 **[SEO_GUIDE.md](SEO_GUIDE.md)** - Guide complet et bonnes pratiques
+- 💻 **[SEO_EXAMPLES.md](SEO_EXAMPLES.md)** - Exemples de code prêts à l'emploi
+- 🧪 **[SEO_TEST.md](SEO_TEST.md)** - Guide de test et validation
+- 🔍 **[check-seo.sh](check-seo.sh)** - Script de vérification automatique
+
+### ⚡ Quick Start SEO
+
+```bash
+# Vérifier l'état du SEO
+./check-seo.sh
+
+# Configurer (voir SEO_GUIDE.md)
+# 1. Éditer src/lib/seo.ts avec vos informations
+# 2. Créer public/og-image.jpg (1200x630px)
+# 3. Créer public/icon-192.png et icon-512.png
+```
+
+### ✅ Déjà implémenté
+- ✅ Métadonnées complètes (Open Graph, Twitter Cards)
+- ✅ Données structurées JSON-LD
+- ✅ Sitemap.xml et robots.txt automatiques
+- ✅ Manifest PWA
+- ✅ Configuration Next.js optimisée
+
+**Pour plus d'informations, consultez [SEO_INDEX.md](SEO_INDEX.md)**
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

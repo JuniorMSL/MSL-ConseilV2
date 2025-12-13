@@ -6,33 +6,77 @@ import PiloterMethod from "@/components/PiloterMethod";
 import ResultsSection from "@/components/ResultsSection";
 import SixReasons from "@/components/SixReasons";
 import ComplementaryServices from "@/components/ComplementaryServices";
+import { generateMetadata as generateSEOMetadata, siteConfig, generateServiceSchema } from "@/lib/seo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = generateSEOMetadata({
+  title: "Accueil",
+  description: "Expert Odoo Finance en Belgique et au Maroc. Découvrez notre méthode P.I.L.O.T.E.R. pour piloter votre croissance et optimiser votre gestion financière.",
+  url: "/",
+  keywords: [
+    "Odoo Finance",
+    "Expert Odoo Belgique",
+    "Expert Odoo Maroc",
+    "Conseil Finance",
+    "Méthode PILOTER",
+    "Croissance entreprise",
+    "Gestion financière",
+  ],
+});
+
+// Schéma JSON-LD pour la page d'accueil (WebSite)
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  description: siteConfig.description,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${siteConfig.url}/search?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-background">
-      {/* Immersive Slider Section */}
-      <HeroSlider />
+    <>
+      {/* JSON-LD Structured Data pour WebSite */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteSchema),
+        }}
+      />
 
-      {/* Video Section */}
-      <VideoSection />
+      <main className="flex min-h-screen flex-col bg-background">
+        {/* Immersive Slider Section */}
+        <HeroSlider />
 
-      {/* Benefits Grid Section */}
-      <BenefitsGrid />
+        {/* Video Section */}
+        <VideoSection />
 
-      {/* About & Services Section */}
-      <AboutServices />
+        {/* Benefits Grid Section */}
+        <BenefitsGrid />
 
-      {/* PILOTER Method Interactive Section */}
-      <PiloterMethod />
+        {/* About & Services Section */}
+        <AboutServices />
 
-      {/* Results/Stats Section */}
-      <ResultsSection />
+        {/* PILOTER Method Interactive Section */}
+        <PiloterMethod />
 
-      {/* 6 Reasons Section */}
-      <SixReasons />
+        {/* Results/Stats Section */}
+        <ResultsSection />
 
-      {/* Complementary Services & Final CTA */}
-      <ComplementaryServices />
-    </main>
+        {/* 6 Reasons Section */}
+        <SixReasons />
+
+        {/* Complementary Services & Final CTA */}
+        <ComplementaryServices />
+      </main>
+    </>
   );
 }
