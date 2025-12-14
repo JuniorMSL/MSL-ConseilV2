@@ -88,7 +88,7 @@ MSL CONSEIL V2 - ARBORESCENCE DU SITE
 │    ├─ LinkedIn → https://linkedin.com/company/... ✅        │
 │    └─ YouTube → https://youtube.com/@... ✅                 │
 │  • Contact:                                                 │
-│    ├─ Email: contact@mslconseils.com ✅                     │
+│    ├─ Email: contact@mslconseils.be ✅                     │
 │    ├─ Bureau: Bruxelles, Belgique                          │
 │    └─ Bureau: Marrakech, Maroc                             │
 │  • Légal (temporaire → /contact):                           │

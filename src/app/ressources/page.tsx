@@ -7,7 +7,7 @@ import ResourceCTA from "@/components/ressources/ResourceCTA";
 
 export default function ResourcesPage() {
     return (
-        <main className="w-full bg-white flex flex-col">
+        <main className="w-full bg-white flex flex-col" suppressHydrationWarning>
             <ResourceHero />
             <ResourceGuides />
             <ResourceArticles />

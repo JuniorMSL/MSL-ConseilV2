@@ -59,7 +59,7 @@ export default function Header() {
 
                     {/* Logo Area */}
                     <Link href="/" className="z-50 group flex items-center gap-2">
-                        <div className="relative w-40 h-10 md:w-48 md:h-12">
+                        <div className="relative w-40 h-14 md:w-48 md:h-12">
                             <Image
                                 src="/assets/logoConseils.png"
                                 alt="MSL Conseils Logo"
@@ -71,12 +71,12 @@ export default function Header() {
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden md:flex items-center gap-8 bg-white/5 px-8 py-3 rounded-full border border-white/10 backdrop-blur-sm">
+                    <nav className={`hidden md:flex items-center gap-8 px-8 py-3 rounded-full backdrop-blur-md transition-all duration-500 ${scrolled ? "bg-transparent border-transparent shadow-none" : "bg-[#013524]/90 border border-white/10 shadow-lg"}`}>
                         {NAV_LINKS.map((link) => (
                             <Link
                                 key={link.label}
                                 href={link.href}
-                                className={`text-xs uppercase tracking-widest hover:text-secondary transition-colors relative group font-medium ${pathname === link.href ? "text-secondary" : "text-white/80"
+                                className={`text-xs uppercase tracking-widest hover:text-secondary transition-colors relative group font-medium ${pathname === link.href ? "text-secondary" : "text-white/90"
                                     }`}
                             >
                                 {link.label}

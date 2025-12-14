@@ -260,7 +260,7 @@ website-mslconseilv2/
 
 ## 📞 Support
 
-**Email**: contact@mslconseils.com  
+**Email**: contact@mslconseils.be  
 **Documentation maintenue par**: Antigravity AI  
 **Dernière mise à jour**: 13 décembre 2025
 

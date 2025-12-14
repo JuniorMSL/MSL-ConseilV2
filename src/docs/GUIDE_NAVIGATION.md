@@ -108,7 +108,7 @@ Accueil (/)
   - S'ouvre dans un nouvel onglet
 
 ### Contact direct
-- **Email**: contact@mslconseils.com
+- **Email**: contact@mslconseils.be
   - Accessible depuis: Footer, Contact page
   - Ouvre le client email
   

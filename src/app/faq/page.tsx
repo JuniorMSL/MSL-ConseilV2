@@ -4,7 +4,7 @@ import FAQCTA from "@/components/faq/FAQCTA";
 
 export default function FAQPage() {
     return (
-        <main className="w-full bg-white flex flex-col">
+        <main className="w-full bg-white flex flex-col" suppressHydrationWarning>
             <FAQHero />
             <FAQList />
             <FAQCTA />

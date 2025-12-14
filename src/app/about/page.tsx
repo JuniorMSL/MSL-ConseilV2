@@ -37,7 +37,7 @@ export default function AboutPage() {
                 }}
             />
 
-            <main className="w-full bg-white flex flex-col">
+            <main className="w-full bg-white flex flex-col" suppressHydrationWarning>
                 <AboutHero />
                 <AboutMission />
                 <AboutMethod />

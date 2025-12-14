@@ -137,7 +137,7 @@ Composants utilisés:
 ### Contact / Diagnostic
 - `#contact` → Redirige vers la page `/contact` ou section contact
 - Liens WhatsApp → À configurer avec numéro réel
-- Email: `contact@mslconseils.com` (ou `contact@msl-conseils.com`)
+- Email: `contact@mslconseils.be` (ou `contact@msl-conseils.com`)
 
 ### Liens sociaux (à configurer)
 - LinkedIn → URL à définir

@@ -43,7 +43,7 @@ export default function SolutionsPage() {
                 }}
             />
 
-            <main className="w-full bg-white flex flex-col">
+            <main className="w-full bg-white flex flex-col" suppressHydrationWarning>
                 <SolutionsHero />
                 <SolutionsList />
                 {/* <SolutionsDetailedList /> */}

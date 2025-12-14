@@ -70,8 +70,8 @@ export default function Footer() {
                         <div className="space-y-6">
                             <div>
                                 <span className="text-xs font-bold uppercase tracking-widest text-gray-500 block mb-2">Email</span>
-                                <a href="mailto:contact@mslconseils.com" className="text-xl md:text-2xl font-light hover:text-secondary transition-colors">
-                                    contact@mslconseils.com
+                                <a href="mailto:contact@mslconseils.be" className="text-xl md:text-2xl font-light hover:text-secondary transition-colors">
+                                    contact@mslconseils.be
                                 </a>
                             </div>
 
@@ -91,7 +91,7 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} MSL Conseils. Tous droits réservés.</p>
+                    <p suppressHydrationWarning>&copy; {new Date().getFullYear()} MSL Conseils. Tous droits réservés.</p>
                     <div className="flex gap-6">
                         <Link href="/contact" className="hover:text-white transition-colors">Politique de confidentialité</Link>
                         <Link href="/contact" className="hover:text-white transition-colors">Mentions légales</Link>

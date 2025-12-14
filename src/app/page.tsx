@@ -52,7 +52,7 @@ export default function Home() {
         }}
       />
 
-      <main className="flex min-h-screen flex-col bg-background">
+      <main className="flex min-h-screen flex-col bg-background" suppressHydrationWarning>
         {/* Immersive Slider Section */}
         <HeroSlider />
 

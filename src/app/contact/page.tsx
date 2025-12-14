@@ -3,7 +3,7 @@ import ContactContent from "@/components/contact/ContactContent";
 
 export default function ContactPage() {
     return (
-        <main className="w-full bg-white flex flex-col">
+        <main className="w-full bg-white flex flex-col" suppressHydrationWarning>
             <ContactHero />
             <ContactContent />
         </main>

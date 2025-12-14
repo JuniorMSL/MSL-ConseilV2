@@ -6,6 +6,7 @@ import Marquee from "../components/Marquee";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { siteConfig, organizationSchema } from "@/lib/seo";
+import Preloader from "@/components/Preloader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -86,6 +87,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Preloader global - Animation d'entrée du site */}
+        <Preloader />
+
         {/* JSON-LD Structured Data pour l'organisation */}
         <script
           type="application/ld+json"

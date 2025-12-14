@@ -263,7 +263,7 @@ Utilisez le fichier `GUIDE_NAVIGATION.md` pour:
 
 ## 📞 Contact & Support
 
-**Email**: contact@mslconseils.com  
+**Email**: contact@mslconseils.be  
 **Bureaux**: Bruxelles (Belgique), Marrakech (Maroc)
 
 ---

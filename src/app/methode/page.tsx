@@ -48,7 +48,7 @@ export default function MethodePage() {
                 }}
             />
 
-            <main className="min-h-screen bg-white">
+            <main className="min-h-screen bg-white" suppressHydrationWarning>
                 <MethodeHero />
                 <MethodeIntro />
                 <MethodeSteps />
