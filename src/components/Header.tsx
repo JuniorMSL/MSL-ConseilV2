@@ -56,8 +56,6 @@ export default function Header() {
                 <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center text-white">
 
                     {/* Logo Area */}
-
-                    {/* Logo Area */}
                     <Link href="/" className="z-50 group flex items-center gap-2">
                         <div className="relative w-40 h-14 md:w-48 md:h-12">
                             <Image
