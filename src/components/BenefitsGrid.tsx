@@ -69,14 +69,14 @@ export default function BenefitsGrid() {
     }, { scope: container });
 
     return (
-        <section ref={container} className="relative w-full bg-white py-24 px-6 md:px-16 lg:px-24 overflow-hidden">
+        <section ref={container} className="relative w-full bg-[#050505] py-24 px-6 md:px-16 lg:px-24 overflow-hidden">
 
             {/* Section Header */}
             <div className="text-center mb-16 max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
+                <h2 className="text-3xl md:text-4xl font-serif text-white mb-4">
                     Découvrez ce que vous gagnez immédiatement
                 </h2>
-                <p className="text-gray-600 text-lg">
+                <p className="text-white/60 text-lg">
                     Des finances claires, des tâches automatisées, un pilotage sans stress grâce à Odoo.
                 </p>
             </div>
@@ -113,7 +113,7 @@ export default function BenefitsGrid() {
                     <BenefitCard item={BENEFITS[3]} />
 
                     {/* "Explore" Style Title */}
-                    <h3 className="font-serif text-6xl md:text-7xl italic text-primary text-right mt-8">
+                    <h3 className="font-serif text-6xl md:text-7xl italic text-white text-right mt-8">
                         Rapides
                     </h3>
                 </div>
@@ -175,7 +175,7 @@ function BenefitCard({ item }: { item: typeof BENEFITS[0] }) {
                 </div>
 
                 {/* Right: Arrow */}
-                <div className="absolute right-6 top-1/2 -translate-y-1/2">
+                {/* <div className="absolute right-6 top-1/2 -translate-y-1/2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -186,7 +186,7 @@ function BenefitCard({ item }: { item: typeof BENEFITS[0] }) {
                     >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
-                </div>
+                </div> */}
             </div>
         </div>
     );

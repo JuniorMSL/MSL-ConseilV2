@@ -153,63 +153,93 @@ export default function ResultsSection() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Case 1 */}
-                    <div className="bg-white/5 border border-white/10 p-8 rounded-xl hover:bg-white/10 transition-colors">
-                        <div className="h-2 w-12 bg-secondary mb-6" />
-                        <h4 className="text-xl font-bold text-white mb-4">PME industrielle (45 employés)</h4>
-                        <ul className="space-y-3 text-white/70 text-sm leading-relaxed">
-                            <li className="flex items-start gap-3">
-                                <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                                42% de tâches manuelles supprimées
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                                Clôture mensuelle passée de 12 jours à 7 jours
-                            </li>
-                        </ul>
+                    <div className="bg-white/5 border border-white/10 p-0 rounded-xl hover:bg-white/10 transition-all duration-500 overflow-hidden group">
+                        <div className="relative h-48 w-full overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1470"
+                                alt="Industrie"
+                                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                            />
+                            <div className="absolute inset-0 bg-primary/40 mix-blend-multiply" />
+                        </div>
+                        <div className="p-8">
+                            <div className="h-2 w-12 bg-secondary mb-6" />
+                            <h4 className="text-xl font-bold text-white mb-4">PME industrielle (45 employés)</h4>
+                            <ul className="space-y-3 text-white/70 text-sm leading-relaxed">
+                                <li className="flex items-start gap-3">
+                                    <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                    42% de tâches manuelles supprimées
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                    Clôture mensuelle passée de 12 jours à 7 jours
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                    {/* Case 2 */}
-                    <div className="bg-white/5 border border-white/10 p-8 rounded-xl hover:bg-white/10 transition-colors">
-                        <div className="h-2 w-12 bg-secondary mb-6" />
-                        <h4 className="text-xl font-bold text-white mb-4">Société de services B2B</h4>
-                        <ul className="space-y-3 text-white/70 text-sm leading-relaxed">
-                            <li className="flex items-start gap-3">
-                                <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                                Mise en place Odoo Finance + formation équipe
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                                Direction financière partielle : marges maîtrisées en 3 mois
-                            </li>
-                        </ul>
+                    {/* Case 2 - Alternate Style */}
+                    <div className="bg-secondary p-0 rounded-xl shadow-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden group">
+                        <div className="relative h-48 w-full overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2664"
+                                alt="Services B2B"
+                                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                            />
+                            <div className="absolute inset-0 bg-primary/20 mix-blend-multiply" />
+                        </div>
+                        <div className="p-8">
+                            <div className="h-2 w-12 bg-primary mb-6" />
+                            <h4 className="text-xl font-bold text-primary mb-4">Société de services B2B</h4>
+                            <ul className="space-y-3 text-primary/80 text-sm leading-relaxed font-medium">
+                                <li className="flex items-start gap-3">
+                                    <svg className="w-4 h-4 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                    Mise en place Odoo Finance + formation équipe
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <svg className="w-4 h-4 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                    Direction financière partielle : marges maîtrisées en 3 mois
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     {/* Case 3 */}
-                    <div className="bg-white/5 border border-white/10 p-8 rounded-xl hover:bg-white/10 transition-colors">
-                        <div className="h-2 w-12 bg-secondary mb-6" />
-                        <h4 className="text-xl font-bold text-white mb-4">Commerce multicanal</h4>
-                        <ul className="space-y-3 text-white/70 text-sm leading-relaxed">
-                            <li className="flex items-start gap-3">
-                                <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                                Automatisation des flux achats/ventes
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                                Tableaux de bord : visibilité quotidienne sur la trésorerie
-                            </li>
-                        </ul>
+                    <div className="bg-white/5 border border-white/10 p-0 rounded-xl hover:bg-white/10 transition-all duration-500 overflow-hidden group">
+                        <div className="relative h-48 w-full overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&q=80&w=1470"
+                                alt="Commerce"
+                                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                            />
+                            <div className="absolute inset-0 bg-primary/40 mix-blend-multiply" />
+                        </div>
+                        <div className="p-8">
+                            <div className="h-2 w-12 bg-secondary mb-6" />
+                            <h4 className="text-xl font-bold text-white mb-4">Commerce multicanal</h4>
+                            <ul className="space-y-3 text-white/70 text-sm leading-relaxed">
+                                <li className="flex items-start gap-3">
+                                    <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                    Automatisation des flux achats/ventes
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                    Tableaux de bord : visibilité quotidienne sur la trésorerie
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

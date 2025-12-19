@@ -87,20 +87,23 @@ export default function ResourceGuides() {
                 </div>
 
                 {/* Avant / Après Block */}
-                <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-100 flex flex-col md:flex-row gap-12 items-center">
-                    <div className="flex-1 space-y-2">
+                <div className="bg-[#050505] rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10 flex flex-col md:flex-row gap-12 items-center relative overflow-hidden">
+                    {/* Subtle glow effect */}
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-[100px] pointer-events-none" />
+
+                    <div className="flex-1 space-y-2 relative z-10">
                         <span className="text-red-500 font-bold uppercase text-xs tracking-widest">Avant</span>
-                        <h4 className="text-xl font-medium text-gray-400 line-through decoration-red-500/30 decoration-2">
+                        <h4 className="text-xl font-medium text-white/40 line-through decoration-red-500/50 decoration-2">
                             Vous cherchez vos chiffres dans plusieurs outils, perdez du temps
                         </h4>
                     </div>
-                    <div className="hidden md:block w-px h-24 bg-gray-100" />
 
-                    <div className="md:hidden w-full h-px bg-gray-100" />
+                    <div className="hidden md:block w-px h-24 bg-white/10" />
+                    <div className="md:hidden w-full h-px bg-white/10" />
 
-                    <div className="flex-1 space-y-2">
+                    <div className="flex-1 space-y-2 relative z-10">
                         <span className="text-secondary font-bold uppercase text-xs tracking-widest">Après</span>
-                        <h4 className="text-2xl font-serif text-primary font-medium">
+                        <h4 className="text-2xl font-serif text-white font-medium">
                             Une méthode claire et simple pour tout centraliser et gagner en fiabilité
                         </h4>
                     </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,8 +8,74 @@ import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const ODOO_CONFIG = {
+    apiUrl: 'https://api-connect-odoo.vercel.app/api',
+    xSignature: 'f48fc94a838ab87d65de288bfcb037d109d1141fd981f70f378be51c91c764bd',
+    xClientId: 'client_mslconseils',
+    xCompanyId: '7',
+};
+
 export default function ContactContent() {
     const container = useRef<HTMLElement>(null);
+    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+    const [formData, setFormData] = useState({
+        nom: '',
+        email: '',
+        telephone: '',
+        entreprise: '',
+        message: ''
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData(prev => ({
+            ...prev,
+            [e.target.name]: e.target.value
+        }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus('loading');
+
+        try {
+            // Construct description with HTML
+            const descriptionParts = [
+                `<h3>Nouveau Lead Web - Formulaire Contact</h3>`,
+                `<p><strong>Nom:</strong> ${formData.nom}</p>`,
+                `<p><strong>Entreprise:</strong> ${formData.entreprise}</p>`,
+                `<p><strong>Message:</strong><br/>${formData.message.replace(/\n/g, '<br/>')}</p>`
+            ];
+
+            const leadData = {
+                name: `Lead Web: ${formData.nom} (${formData.entreprise || 'Particulier'})`,
+                phone: formData.telephone,
+                email_from: formData.email,
+                description: descriptionParts.join('\n'),
+            };
+
+            const response = await fetch(`${ODOO_CONFIG.apiUrl}/leads`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-signature': ODOO_CONFIG.xSignature,
+                    'x-client-id': ODOO_CONFIG.xClientId,
+                    'x-company-id': ODOO_CONFIG.xCompanyId,
+                },
+                body: JSON.stringify(leadData)
+            });
+
+            if (!response.ok) {
+                throw new Error('Erreur lors de l\'envoi');
+            }
+
+            setStatus('success');
+            setFormData({ nom: '', email: '', telephone: '', entreprise: '', message: '' });
+
+        } catch (error) {
+            console.error('Erreur:', error);
+            setStatus('error');
+        }
+    };
 
     useGSAP(() => {
         gsap.fromTo(".contact-block",
@@ -33,34 +99,94 @@ export default function ContactContent() {
 
                 {/* Left Column: Form */}
                 <div className="contact-block">
-                    <div className="bg-gray-50 rounded-[2rem] p-8 md:p-12 shadow-sm border border-gray-100">
+                    <div className="bg-gray-50 rounded-[2rem] p-8 md:p-12 shadow-sm border border-gray-100 relative overflow-hidden">
                         <h2 className="text-3xl font-serif text-primary mb-8">Écrivez-nous</h2>
-                        <form className="space-y-6">
+
+                        {/* State Messages */}
+                        {status === 'success' && (
+                            <div className="mb-6 p-4 rounded-xl bg-green-100 border border-green-200 text-green-800 text-sm font-medium flex items-center gap-2">
+                                <span>✅</span> Votre demande a été envoyée avec succès ! Nous vous recontacterons sous 24h.
+                            </div>
+                        )}
+                        {status === 'error' && (
+                            <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-100 text-red-600 text-sm font-medium flex items-center gap-2">
+                                <span>⚠️</span> Une erreur est survenue. Veuillez réessayer ou nous contacter par email.
+                            </div>
+                        )}
+
+                        <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="space-y-2">
                                 <label className="text-xs uppercase font-bold tracking-widest text-gray-500 ml-1">Nom Complet</label>
-                                <input type="text" className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors" placeholder="John Doe" />
+                                <input
+                                    type="text"
+                                    name="nom"
+                                    required
+                                    value={formData.nom}
+                                    onChange={handleChange}
+                                    className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors"
+                                    placeholder="John Doe"
+                                />
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
                                     <label className="text-xs uppercase font-bold tracking-widest text-gray-500 ml-1">Email</label>
-                                    <input type="email" className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors" placeholder="john@example.com" />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        required
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors"
+                                        placeholder="john@example.com"
+                                    />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-xs uppercase font-bold tracking-widest text-gray-500 ml-1">Téléphone</label>
-                                    <input type="tel" className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors" placeholder="+33 6..." />
+                                    <input
+                                        type="tel"
+                                        name="telephone"
+                                        required
+                                        value={formData.telephone}
+                                        onChange={handleChange}
+                                        className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors"
+                                        placeholder="+33 6..."
+                                    />
                                 </div>
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs uppercase font-bold tracking-widest text-gray-500 ml-1">Entreprise / Secteur</label>
-                                <input type="text" className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors" placeholder="Ex: Industrie Tech" />
+                                <input
+                                    type="text"
+                                    name="entreprise"
+                                    value={formData.entreprise}
+                                    onChange={handleChange}
+                                    className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors"
+                                    placeholder="Ex: Industrie Tech"
+                                />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs uppercase font-bold tracking-widest text-gray-500 ml-1">Votre Message</label>
-                                <textarea rows={4} className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors resize-none" placeholder="Comment pouvons-nous vous aider ?"></textarea>
+                                <textarea
+                                    name="message"
+                                    rows={4}
+                                    required
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    className="w-full bg-white border border-gray-200 rounded-xl px-6 py-4 focus:outline-none focus:border-secondary transition-colors resize-none"
+                                    placeholder="Comment pouvons-nous vous aider ?"
+                                ></textarea>
                             </div>
 
-                            <button className="w-full bg-primary text-white font-bold py-5 rounded-xl hover:bg-secondary transition-colors duration-300 shadow-lg shadow-primary/20 flex items-center justify-center gap-2 group">
-                                <span>👉 Envoyer ma demande</span>
+                            <button
+                                type="submit"
+                                disabled={status === 'loading'}
+                                className={`w-full bg-primary text-white font-bold py-5 rounded-xl hover:bg-secondary transition-colors duration-300 shadow-lg shadow-primary/20 flex items-center justify-center gap-2 group ${status === 'loading' ? 'opacity-70 cursor-not-allowed' : ''}`}
+                            >
+                                {status === 'loading' ? (
+                                    <span>Envoi en cours...</span>
+                                ) : (
+                                    <span>👉 Envoyer ma demande</span>
+                                )}
                             </button>
                             <p className="text-center text-xs text-gray-400">Réponse rapide et personnalisée sous 24h.</p>
                         </form>

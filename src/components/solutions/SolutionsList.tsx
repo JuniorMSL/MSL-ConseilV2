@@ -149,25 +149,24 @@ export default function SolutionsList() {
                             <h2 className="text-4xl md:text-5xl font-serif text-primary mb-6">{sol.title}</h2>
                             <p className="text-gray-500 text-lg leading-relaxed mb-10 max-w-lg">{sol.description}</p>
 
-                            {/* Comparison Cards */}
-                            <div className="grid grid-cols-2 gap-6 mb-10">
-                                <div className="p-6 rounded-2xl bg-red-50 border border-red-100">
-                                    <p className="text-xs font-bold uppercase tracking-wide text-red-400 mb-3">Avant</p>
-                                    <ul className="space-y-2">
+                            <div className="grid grid-cols-2 gap-8 mb-12">
+                                <div className="p-8 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm">
+                                    <p className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-6">Avant</p>
+                                    <ul className="space-y-3">
                                         {sol.before.map((item, j) => (
-                                            <li key={j} className="text-sm text-gray-600 flex items-start gap-2">
-                                                <span className="text-red-300 mt-1">x</span>
+                                            <li key={j} className="text-base text-gray-500 flex items-start gap-3 line-through decoration-gray-300">
+                                                <span className="text-gray-300 mt-1.5 text-xs">✕</span>
                                                 {item}
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-2xl bg-primary/5 border border-primary/10 shadow-sm">
-                                    <p className="text-xs font-bold uppercase tracking-wide text-secondary mb-3">Après</p>
-                                    <ul className="space-y-2">
+                                <div className="p-8 rounded-2xl bg-[#014730] border border-[#014730] shadow-xl">
+                                    <p className="text-sm font-bold uppercase tracking-wide text-secondary mb-6">Après</p>
+                                    <ul className="space-y-3">
                                         {sol.after.map((item, j) => (
-                                            <li key={j} className="text-sm text-gray-800 font-medium flex items-start gap-2">
-                                                <span className="text-secondary mt-1">✓</span>
+                                            <li key={j} className="text-base text-white font-medium flex items-start gap-3">
+                                                <span className="text-secondary mt-1.5 text-xs">✓</span>
                                                 {item}
                                             </li>
                                         ))}

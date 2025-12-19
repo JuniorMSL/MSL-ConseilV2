@@ -132,8 +132,8 @@ export default function AboutMethod() {
 
                 {/* Footer Line */}
                 <div className="mt-16 text-center">
-                    <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
-                        Une progression simple, humaine, mesurable.
+                    <p className="text-xl font-bold uppercase tracking-widest text-primary">
+                        Une progression <span className="text-black">simple</span>, <span className="text-black">humaine</span>, <span className="text-black">mesurable</span>.
                     </p>
                 </div>
             </div>
