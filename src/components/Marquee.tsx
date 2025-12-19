@@ -4,8 +4,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 
-const TEXT_PART1 = "Un bon outil ne suffit pas. Il faut une méthode claire, un cadre sécurisant et un regard extérieur pour avancer sereinement. Avec MSL Conseils, Odoo Finance devient un levier sur mesure, adapté à votre réalité et à votre rythme  ";
-const TEXT_PART2 = "• Belgique & Maroc •";
+const TEXT_BEFORE = "Un bon outil ne suffit pas. Il faut une méthode claire, un cadre sécurisant et un regard extérieur pour avancer sereinement. Avec ";
+const TEXT_BRAND = "MSL Conseils";
+const TEXT_AFTER = ", Odoo Finance devient un levier sur mesure, adapté à votre réalité et à votre rythme  ";
+const TEXT_LOCATION = "• Belgique & Maroc •";
 
 export default function Marquee() {
     const container = useRef<HTMLDivElement>(null);
@@ -45,8 +47,10 @@ export default function Marquee() {
                 {/* Render enough copies to ensuring smooth infinite scroll */}
                 {[...Array(8)].map((_, i) => (
                     <div key={i} className="flex items-center shrink-0 pl-16">
-                        <span className="text-white">{TEXT_PART1}</span>
-                        <span className="ml-2 text-secondary">{TEXT_PART2}</span>
+                        <span className="text-white">{TEXT_BEFORE}</span>
+                        <span className="text-white font-bold ml-1">{TEXT_BRAND}</span>
+                        <span className="text-white">{TEXT_AFTER}</span>
+                        <span className="text-secondary">{TEXT_LOCATION}</span>
                     </div>
                 ))}
             </div>
