@@ -92,7 +92,7 @@ Accueil (/)
 | Découvrir la méthode P.I.L.O.T.E.R. | `/solutions` | About, divers |
 | Parler à un expert | `/contact` | Home, divers |
 | Demander un diagnostic | `/contact` | Header mobile, divers |
-| Parler à un expert Odoo Finance | `/contact` | ComplementaryServices |
+| Parler à un expert Odoo Finances | `/contact` | ComplementaryServices |
 
 ---
 
@@ -139,7 +139,7 @@ Légal: /contact (temporaire)
 
 #### `ComplementaryServices.tsx`
 ```typescript
-CTA: /contact (Parler à un expert Odoo Finance)
+CTA: /contact (Parler à un expert Odoo Finances)
 ```
 
 #### `ResourceArticles.tsx`
@@ -181,7 +181,7 @@ Pour tester que tous les liens fonctionnent:
 - [ ] Bouton "Diagnostic Gratuit" (header) → `/contact`
 - [ ] Bouton "Découvrir la méthode P.I.L.O.T.E.R." (about) → `/solutions`
 - [ ] Bouton "Demander diagnostic" (about) → `/contact`
-- [ ] Lien "Parler à un expert Odoo Finance" → `/contact`
+- [ ] Lien "Parler à un expert Odoo Finances" → `/contact`
 - [ ] Lien "Tous les articles" → `/ressources#articles`
 
 ### Footer

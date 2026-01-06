@@ -8,7 +8,7 @@ import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 const DIFFERENTIATORS = [
-    "Vision 360° : finance + processus + Odoo",
+    "Vision 360° : finances + processus + Odoo",
     "Expertise terrain PME belges & marocaines",
     "Méthode simple et orientée résultats",
     "Livrables concrets à chaque étape",
@@ -99,11 +99,11 @@ export default function AboutValues() {
                     </div>
 
                     {/* Differentiators - Split into 2 cards */}
-                    <div className="bento-item md:col-span-2 md:row-span-1 bg-gray-50 rounded-[2rem] p-8 flex flex-col justify-center hover:shadow-xl transition-shadow">
+                    <div className="bento-item md:col-span-2 md:row-span-1 bg-[#050505] border border-white/10 rounded-[2rem] p-8 flex flex-col justify-center hover:shadow-xl transition-shadow">
                         <span className="text-xs uppercase tracking-[0.3em] text-secondary mb-4">Notre Différence</span>
                         <ul className="space-y-3">
                             {DIFFERENTIATORS.slice(0, 3).map((item, i) => (
-                                <li key={i} className="flex items-center gap-3 text-gray-700 text-sm">
+                                <li key={i} className="flex items-center gap-3 text-white text-sm">
                                     <span className="w-2 h-2 rounded-full bg-secondary shrink-0" />
                                     {item}
                                 </li>
@@ -131,7 +131,7 @@ export default function AboutValues() {
                             "Nous parlons le langage des dirigeants, pas celui des techniciens."
                         </p>
                         <p className="text-white/50 text-sm">
-                            Une équipe belgo-marocaine d'experts en finance, contrôle de gestion, Odoo et transformation digitale.
+                            Une équipe belgo-marocaine d'experts en finances, contrôle de gestion, Odoo et transformation digitale.
                         </p>
                     </div>
 

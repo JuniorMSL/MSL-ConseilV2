@@ -11,38 +11,38 @@ gsap.registerPlugin(ScrollTrigger);
 const REASONS = [
     {
         id: 1,
-        title: "Expertise Odoo Finance + 20 ans en fiduciaire",
-        description: "Des conseils réalistes, applicables, conformes.",
+        title: "Une double expertise rare : Odoo + métier comptable",
+        description: "+20 ans en fiduciaire + maîtrise d’Odoo Finances Des conseils réalistes, conformes, et directement applicables à votre quotidien.",
         image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop"
     },
     {
         id: 2,
-        title: "Aucun risque pour votre équipe",
-        description: "Nous renforçons vos compétences, jamais votre charge de travail.",
+        title: "Zéro risque pour votre équipe",
+        description: "Nous ne remplaçons pas vos collaborateurs — nous les faisons monter en compétence. Résultat : plus d’autonomie, moins de dépendance, et aucune surcharge.",
         image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop"
     },
     {
         id: 3,
-        title: "Méthode PILOTER",
-        description: "Sécurité, automatisation, visibilité.",
+        title: "Une méthode claire : P.I.L.O.T.E.R.™",
+        description: "Une approche structurée pour transformer votre gestion financière : Sécurité, automatisation, visibilité, pilotage maîtrisé.",
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
     },
     {
         id: 4,
-        title: "DAF / Contrôle de gestion à temps partiel",
-        description: "Une expertise stratégique, sans les coûts d’un DAF interne.",
-        image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop"
+        title: "Un accompagnement de proximité",
+        description: "Nous travaillons à vos côtés, pas au-dessus de vos équipes. Humain, accessible, impliqué : notre accompagnement est autant humain que technique.",
+        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
     },
     {
         id: 5,
-        title: "Formation adaptée à votre réalité",
-        description: "Pratique, opérationnelle, directement applicable.",
+        title: "Des formations concrètes et sur-mesure",
+        description: "Pas de théorie inutile. Des ateliers pratiques, conçus pour vos outils, vos données, vos enjeux réels.",
         image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop"
     },
     {
         id: 6,
-        title: "Vision stratégique orientée résultats",
-        description: "Des décisions plus rapides et plus solides.",
+        title: "Une vision stratégique orientée résultats",
+        description: "Vos données deviennent des décisions. Vous gagnez en clarté, en réactivité, en fiabilité.",
         image: "https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2070&auto=format&fit=crop"
     }
 ];
@@ -57,7 +57,7 @@ export default function SixReasons() {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
 
                 {/* Left: Dynamic Image Display */}
-                <div className="flex-1 w-full relative h-[600px] flex items-center justify-center">
+                <div className="flex-1 w-full relative flex flex-col items-center justify-center">
 
                     {/* Background Circle Decoration */}
                     <div className="absolute w-[500px] h-[500px] bg-gray-100 rounded-full -z-10 blur-3xl" />
@@ -79,6 +79,35 @@ export default function SixReasons() {
                         {/* Overlay Gradient for Text Readability if we added text over image (optional) */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
                     </div>
+
+                    {/* Result Text Below Image */}
+                    <div className="mt-10 max-w-[420px] text-center px-6 py-8 bg-gradient-to-br from-white/80 to-gray-50/90 backdrop-blur-sm rounded-3xl border border-secondary/20 shadow-xl shadow-secondary/5 relative overflow-hidden">
+
+                        {/* Decorative accent */}
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-transparent via-secondary to-transparent rounded-full" />
+
+                        {/* Icon */}
+                        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-4">
+                            <svg className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+
+                        <p className="text-2xl font-bold text-primary mb-4 tracking-tight">Résultat</p>
+                        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                            Un service financier structuré, des équipes autonomes, un pilotage fiable.
+                        </p>
+                        <p className="text-base text-gray-500 italic font-medium">
+                            Sans stress. Sans complexité. Sans perte de temps.
+                        </p>
+
+                        {/* Bottom decorative dots */}
+                        <div className="flex items-center justify-center gap-2 mt-6">
+                            <span className="w-2 h-2 rounded-full bg-secondary/60" />
+                            <span className="w-2 h-2 rounded-full bg-secondary/40" />
+                            <span className="w-2 h-2 rounded-full bg-secondary/20" />
+                        </div>
+                    </div>
                 </div>
 
                 {/* Right: Interactive List */}
@@ -90,7 +119,7 @@ export default function SixReasons() {
                             <span className="italic text-secondary">MSL Conseils</span>
                         </h2>
                         <p className="mt-6 text-gray-500 text-lg">
-                            Pour piloter vos finances dans Odoo avec clarté et sérénité.
+                            Pour piloter vos financess dans Odoo avec clarté, méthode et sérénité.
                         </p>
                     </div>
 

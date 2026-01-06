@@ -24,7 +24,7 @@ const CASES = [
         kpi: "ROI",
         label: "Rapide",
         context: "E-commerce",
-        desc: "Retour sur investissement rapide avec Odoo Finance."
+        desc: "Retour sur investissement rapide avec Odoo Finances."
     }
 ];
 

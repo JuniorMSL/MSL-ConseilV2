@@ -24,15 +24,15 @@
 ```diff
 + import Link from "next/link";
 
-- <button className="...">Demander un diagnostic Odoo Finance</button>
-+ <Link href="/contact" className="...">Demander un diagnostic Odoo Finance</Link>
+- <button className="...">Demander un diagnostic Odoo Finances</button>
++ <Link href="/contact" className="...">Demander un diagnostic Odoo Finances</Link>
 
 - <button className="...">Parler à un consultant MSL</button>
 + <Link href="/contact" className="...">Parler à un consultant MSL</Link>
 ```
 
 **Résultat**:
-- ✅ "Demander un diagnostic Odoo Finance" → `/contact`
+- ✅ "Demander un diagnostic Odoo Finances" → `/contact`
 - ✅ "Parler à un consultant MSL" → `/contact`
 
 ---
@@ -68,12 +68,12 @@
 ```diff
 + import Link from "next/link";
 
-- <button className="...">Découvrez comment Odoo Finance peut transformer votre gestion</button>
-+ <Link href="/solutions" className="...">Découvrez comment Odoo Finance peut transformer votre gestion</Link>
+- <button className="...">Découvrez comment Odoo Finances peut transformer votre gestion</button>
++ <Link href="/solutions" className="...">Découvrez comment Odoo Finances peut transformer votre gestion</Link>
 ```
 
 **Résultat**:
-- ✅ "Découvrez comment Odoo Finance..." → `/solutions`
+- ✅ "Découvrez comment Odoo Finances..." → `/solutions`
 
 ---
 
@@ -94,7 +94,7 @@
 ### Parcours utilisateur amélioré:
 
 #### Au chargement de la page (Hero Slider):
-1. ✅ Premier CTA visible: "Demander un diagnostic Odoo Finance" → `/contact`
+1. ✅ Premier CTA visible: "Demander un diagnostic Odoo Finances" → `/contact`
 2. ✅ Second CTA visible: "Parler à un consultant MSL" → `/contact`
 
 #### En scrollant (AboutServices):
@@ -102,7 +102,7 @@
 4. ✅ "Réservez votre audit gratuit" → `/contact`
 
 #### Plus bas (BenefitsGrid):
-5. ✅ "Découvrez comment Odoo Finance..." → `/solutions`
+5. ✅ "Découvrez comment Odoo Finances..." → `/solutions`
 
 ---
 
@@ -122,11 +122,11 @@
 ## ✅ Checklist de validation
 
 ### Page d'accueil (`/`):
-- [ ] Hero Slider: Cliquer sur "Demander un diagnostic Odoo Finance" → `/contact`
+- [ ] Hero Slider: Cliquer sur "Demander un diagnostic Odoo Finances" → `/contact`
 - [ ] Hero Slider: Cliquer sur "Parler à un consultant MSL" → `/contact`
 - [ ] AboutServices: Cliquer sur "Obtenez votre plan personnalisé" → `/contact`
 - [ ] AboutServices: Cliquer sur "Réservez votre audit gratuit" → `/contact`
-- [ ] BenefitsGrid: Cliquer sur "Découvrez comment Odoo Finance..." → `/solutions`
+- [ ] BenefitsGrid: Cliquer sur "Découvrez comment Odoo Finances..." → `/solutions`
 
 ---
 
@@ -136,11 +136,11 @@
 
 #### Vers `/contact`:
 1. Header: "Diagnostic Gratuit" (desktop + mobile)
-2. Hero Slider: "Demander un diagnostic Odoo Finance"
+2. Hero Slider: "Demander un diagnostic Odoo Finances"
 3. Hero Slider: "Parler à un consultant MSL"
 4. AboutServices: "Obtenez votre plan personnalisé"
 5. AboutServices: "Réservez votre audit gratuit"
-6. ComplementaryServices: "Parler à un expert Odoo Finance"
+6. ComplementaryServices: "Parler à un expert Odoo Finances"
 7. ResourceCTA: "Parler à un expert"
 8. MethodeCTA: "Demandez votre diagnostic gratuit"
 9. MethodeCTA: "Parlez à un consultant expert"
@@ -153,7 +153,7 @@
 #### Vers `/solutions`:
 1. About page: "Découvrir la méthode P.I.L.O.T.E.R."
 2. MethodeIntro: "Découvrir la méthode P.I.L.O.T.E.R."
-3. BenefitsGrid: "Découvrez comment Odoo Finance..."
+3. BenefitsGrid: "Découvrez comment Odoo Finances..."
 
 #### Vers `/ressources`:
 1. ResourceCTA: "Télécharger le Kit Complet"

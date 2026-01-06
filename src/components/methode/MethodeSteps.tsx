@@ -23,7 +23,7 @@ const STEPS = [
     {
         letter: "I",
         title: "Installer",
-        subtitle: "Un Odoo Finance configuré pour VOUS",
+        subtitle: "Un Odoo Finances configuré pour VOUS",
         desc: "Installer, c’est garantir que votre système ne vous trahira jamais.",
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
         before: ["Modules mal paramétrés", "Données incohérentes", "Tâches manuelles"],

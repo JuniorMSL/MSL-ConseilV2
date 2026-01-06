@@ -12,13 +12,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = generateSEOMetadata({
   title: "Contactez-nous",
-  description: "Contactez MSL Conseils, votre expert Odoo Finance en Belgique et au Maroc. Demandez votre diagnostic gratuit et pilotez votre croissance dès aujourd'hui.",
+  description: "Contactez MSL Conseils, votre expert Odoo Finances en Belgique et au Maroc. Demandez votre diagnostic gratuit et pilotez votre croissance dès aujourd'hui.",
   url: "/contact",
   keywords: [
     "Contact MSL Conseils",
     "Diagnostic gratuit",
     "Expert Odoo",
-    "Consultation Finance",
+    "Consultation finances",
     "Belgique",
     "Maroc",
   ],
@@ -74,11 +74,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = generateSEOMetadata({
   title: "Questions Fréquentes (FAQ)",
-  description: "Trouvez les réponses à vos questions sur MSL Conseils, Odoo Finance, notre méthode P.I.L.O.T.E.R. et nos services en Belgique et au Maroc.",
+  description: "Trouvez les réponses à vos questions sur MSL Conseils, Odoo Finances, notre méthode P.I.L.O.T.E.R. et nos services en Belgique et au Maroc.",
   url: "/faq",
   keywords: [
     "FAQ MSL Conseils",
-    "Questions Odoo Finance",
+    "Questions Odoo Finances",
     "Méthode PILOTER",
     "Réponses",
     "Support",
@@ -106,8 +106,8 @@ const faqSchema = generateFAQSchema([
     answer: "Le diagnostic initial est entièrement gratuit et sans engagement. Il nous permet de comprendre vos besoins et de vous proposer une solution adaptée.",
   },
   {
-    question: "Quels sont les avantages d'Odoo Finance ?",
-    answer: "Odoo Finance offre une solution complète de gestion financière : comptabilité, facturation, gestion des paiements, reporting en temps réel, et intégration avec d'autres modules Odoo.",
+    question: "Quels sont les avantages d'Odoo Finances ?",
+    answer: "Odoo Finances offre une solution complète de gestion financière : comptabilité, facturation, gestion des paiements, reporting en temps réel, et intégration avec d'autres modules Odoo.",
   },
   // Ajoutez vos vraies questions ici
 ]);
@@ -147,12 +147,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = generateSEOMetadata({
   title: "Ressources",
-  description: "Découvrez nos ressources, études de cas et guides pratiques sur Odoo Finance, la gestion financière et notre méthode P.I.L.O.T.E.R. pour optimiser votre entreprise.",
+  description: "Découvrez nos ressources, études de cas et guides pratiques sur Odoo Finances, la gestion financière et notre méthode P.I.L.O.T.E.R. pour optimiser votre entreprise.",
   url: "/ressources",
   keywords: [
     "Ressources Odoo",
     "Études de cas",
-    "Guides Finance",
+    "Guides finances",
     "Méthode PILOTER",
     "Best practices",
     "Témoignages clients",
@@ -321,9 +321,9 @@ const localBusinessSchema = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "Implémentation Odoo Finance",
-  description: "Service complet d'implémentation Odoo Finance avec la méthode P.I.L.O.T.E.R.",
-  image: `${siteConfig.url}/services/odoo-finance.jpg`,
+  name: "Implémentation Odoo Finances",
+  description: "Service complet d'implémentation Odoo Finances avec la méthode P.I.L.O.T.E.R.",
+  image: `${siteConfig.url}/services/odoo-finances.jpg`,
   brand: {
     "@type": "Brand",
     name: "MSL Conseils",

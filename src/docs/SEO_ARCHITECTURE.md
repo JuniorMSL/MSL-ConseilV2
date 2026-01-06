@@ -32,7 +32,7 @@
 │   │   └── src/app/page.tsx
 │   │       ├── ✅ Metadata: "Accueil | MSL Conseils"
 │   │       ├── ✅ Description optimisée
-│   │       ├── ✅ Keywords: Odoo Finance, Belgique, Maroc...
+│   │       ├── ✅ Keywords: Odoo Finances, Belgique, Maroc...
 │   │       └── ✅ JSON-LD: WebSite Schema
 │   │
 │   ├── 👥 À Propos (/about)
@@ -263,13 +263,13 @@ Next.js optimise automatiquement:
 └─────────────────────────────────────────────────────────────────┘
 
 Principaux:
-• Odoo Finance
+• Odoo Finances
 • Expert Odoo Belgique
 • Expert Odoo Maroc
 • Méthode PILOTER
 
 Secondaires:
-• Conseil Finance
+• Conseil finances
 • Croissance entreprise
 • Gestion financière
 • ERP Odoo
@@ -277,7 +277,7 @@ Secondaires:
 
 Longue traîne:
 • "Comment piloter sa croissance avec Odoo"
-• "Expert Odoo Finance Belgique et Maroc"
+• "Expert Odoo Finances Belgique et Maroc"
 • "Méthode PILOTER pour entreprise"
 • "Optimiser gestion financière Odoo"
 

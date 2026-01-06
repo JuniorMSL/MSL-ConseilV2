@@ -31,7 +31,7 @@ Tous les liens vides (`href="#"`) ont été corrigés et redirigent maintenant v
 ### 2. **ComplementaryServices.tsx** ✅
 **Fichier**: `/src/components/ComplementaryServices.tsx`
 
-- **"Parler à un expert Odoo Finance"**: `href="#"` → `href="/contact"`
+- **"Parler à un expert Odoo Finances"**: `href="#"` → `href="/contact"`
   - Conversion de `<a>` vers `<Link>` de Next.js
   - Ajout de l'import: `import Link from "next/link";`
 

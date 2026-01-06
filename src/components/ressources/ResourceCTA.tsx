@@ -12,7 +12,7 @@ export default function ResourceCTA() {
             <div className="relative z-10 max-w-2xl">
                 <h2 className="text-4xl md:text-6xl font-serif mb-8 leading-tight">
                     Prêt à structurer <br />
-                    votre finance ?
+                    votre finances ?
                 </h2>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                     <Link href="/ressources" className="bg-white text-primary px-8 py-4 rounded-full font-bold uppercase tracking-wider text-xs hover:bg-gray-100 transition-colors shadow-xl hover:scale-105 transform duration-300 text-center">

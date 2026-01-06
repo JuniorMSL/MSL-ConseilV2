@@ -10,7 +10,7 @@
 | # | Fichier | Type | Modifications |
 |---|---------|------|---------------|
 | 1 | `src/components/Footer.tsx` | 🔧 Modifié | • Correction des liens sociaux (LinkedIn, YouTube)<br>• Ajout de target="_blank" et rel="noopener"<br>• Correction des liens légaux |
-| 2 | `src/components/ComplementaryServices.tsx` | 🔧 Modifié | • Ajout import Link de Next.js<br>• Conversion href="#" → href="/contact"<br>• Lien "Parler à un expert Odoo Finance" |
+| 2 | `src/components/ComplementaryServices.tsx` | 🔧 Modifié | • Ajout import Link de Next.js<br>• Conversion href="#" → href="/contact"<br>• Lien "Parler à un expert Odoo Finances" |
 | 3 | `src/components/ressources/ResourceArticles.tsx` | 🔧 Modifié | • Ajout import Link de Next.js<br>• Correction lien "Tous les articles"<br>• Redirection vers /ressources#articles |
 | 4 | `src/components/contact/ContactContent.tsx` | 🔧 Modifié | • Correction du lien WhatsApp<br>• Ajout de https://wa.me/...<br>• target="_blank" et rel="noopener" |
 | 5 | `src/app/about/page.tsx` | 🔧 Modifié | • Ajout import Link de Next.js<br>• Conversion boutons → Link<br>• CTAs vers /solutions et /contact |
@@ -56,8 +56,8 @@
 - <button>Découvrir la méthode P.I.L.O.T.E.R.</button>
 + <Link href="/solutions">Découvrir la méthode P.I.L.O.T.E.R.</Link>
 
-- <a href="#">Parler à un expert Odoo Finance</a>
-+ <Link href="/contact">Parler à un expert Odoo Finance</Link>
+- <a href="#">Parler à un expert Odoo Finances</a>
++ <Link href="/contact">Parler à un expert Odoo Finances</Link>
 
 - <a href="#">Tous les articles</a>
 + <Link href="/ressources#articles">Tous les articles</Link>

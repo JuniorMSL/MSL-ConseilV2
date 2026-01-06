@@ -69,7 +69,7 @@ export default function ResourcesHero() {
 
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-primary mb-8 leading-[1.1]">
                     <span className="block overflow-hidden"><span className="res-title block">Apprenez à piloter</span></span>
-                    <span className="block overflow-hidden"><span className="res-title block text-secondary italic">vos finances simplement</span></span>
+                    <span className="block overflow-hidden"><span className="res-title block text-secondary italic">vos financess simplement</span></span>
                 </h1>
 
                 <p className="res-subtitle text-xl md:text-2xl text-gray-500 font-light max-w-2xl mx-auto mb-10 leading-relaxed">

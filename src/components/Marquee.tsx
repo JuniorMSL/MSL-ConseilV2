@@ -4,7 +4,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 
-const TEXT_CONTENT = "Vos chiffres sous contrôle. En temps réel. Belgique & Maroc.";
+const TEXT_BEFORE = "Un bon outil ne suffit pas. Il faut une méthode claire, un cadre sécurisant et un regard extérieur pour avancer sereinement. Avec ";
+const TEXT_BRAND = "MSL Conseils";
+const TEXT_AFTER = ", Odoo Finances devient un levier sur mesure, adapté à votre réalité et à votre rythme  ";
+const TEXT_LOCATION = "• Belgique & Maroc •";
 
 export default function Marquee() {
     const container = useRef<HTMLDivElement>(null);
@@ -23,7 +26,7 @@ export default function Marquee() {
                 if (totalWidth > 0) {
                     gsap.to(slider.current, {
                         x: "-50%", // Move half the width (since we have 2 sets of content essentially)
-                        duration: 40, // Slower duration (was implied faster before)
+                        duration: 120, // Much slower duration for comfortable reading
                         ease: "linear",
                         repeat: -1,
                     });
@@ -44,8 +47,10 @@ export default function Marquee() {
                 {/* Render enough copies to ensuring smooth infinite scroll */}
                 {[...Array(8)].map((_, i) => (
                     <div key={i} className="flex items-center shrink-0 pl-16">
-                        <span className="text-white">{TEXT_CONTENT}</span>
-                        <span className="ml-16 text-secondary">•</span>
+                        <span className="text-white">{TEXT_BEFORE}</span>
+                        <span className="text-white font-bold ml-1">{TEXT_BRAND}</span>
+                        <span className="text-white">{TEXT_AFTER}</span>
+                        <span className="text-secondary">{TEXT_LOCATION}</span>
                     </div>
                 ))}
             </div>

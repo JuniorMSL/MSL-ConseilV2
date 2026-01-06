@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const SOLUTIONS = [
     {
         id: 1,
-        title: "Odoo Finance",
+        title: "Odoo Finances",
         subtitle: "Sur Mesure",
         image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2670&auto=format&fit=crop",
         before: ["Données dispersées", "Erreurs fréquentes", "Clôture lente"],
@@ -74,8 +74,8 @@ const SOLUTIONS = [
         title: "Digitalisation",
         subtitle: "Connectée",
         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop",
-        before: ["Silos étanches", "Finance isolée", "Manque coord."],
-        after: ["Flux connectés", "Finance intégrée", "Transparence"],
+        before: ["Silos étanches", "finances isolée", "Manque coord."],
+        after: ["Flux connectés", "finances intégrée", "Transparence"],
         actions: ["Analyse flux", "Connexion API", "Automatisation globale"],
         color: "#fe981a"
     }

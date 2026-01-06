@@ -107,10 +107,10 @@ export default function Preloader() {
                 {/* Titre / Tagline */}
                 <div className="preloader-text text-center space-y-2">
                     <h2 className="text-2xl md:text-3xl font-light tracking-[0.2em] uppercase text-white/90">
-                        MSL Conseil
+                        MSL Conseils
                     </h2>
                     <p className="text-xs md:text-sm text-secondary/80 font-mono tracking-widest uppercase">
-                        Expertise Odoo & Finance
+                        Expertise Odoo & financess
                     </p>
                 </div>
 

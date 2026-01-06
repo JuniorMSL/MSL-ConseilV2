@@ -16,7 +16,7 @@ const GUIDES = [
         image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop"
     },
     {
-        title: "Tutoriels pas-à-pas pour configurer Odoo Finance",
+        title: "Tutoriels pas-à-pas pour configurer Odoo Finances",
         category: "Tutoriels",
         desc: "De la théorie à la pratique, sans friction.",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop"
@@ -53,7 +53,7 @@ export default function ResourceGuides() {
             <div className="max-w-7xl mx-auto">
                 <div className="mb-16 text-center">
                     <h2 className="text-3xl md:text-4xl font-serif text-primary mb-4">Guides Pratiques</h2>
-                    <p className="text-gray-500 max-w-2xl mx-auto">Des ressources actionnables pour maîtriser Odoo Finance.</p>
+                    <p className="text-gray-500 max-w-2xl mx-auto">Des ressources actionnables pour maîtriser Odoo Finances.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
@@ -87,20 +87,23 @@ export default function ResourceGuides() {
                 </div>
 
                 {/* Avant / Après Block */}
-                <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-100 flex flex-col md:flex-row gap-12 items-center">
-                    <div className="flex-1 space-y-2">
+                <div className="bg-[#050505] rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10 flex flex-col md:flex-row gap-12 items-center relative overflow-hidden">
+                    {/* Subtle glow effect */}
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-[100px] pointer-events-none" />
+
+                    <div className="flex-1 space-y-2 relative z-10">
                         <span className="text-red-500 font-bold uppercase text-xs tracking-widest">Avant</span>
-                        <h4 className="text-xl font-medium text-gray-400 line-through decoration-red-500/30 decoration-2">
+                        <h4 className="text-xl font-medium text-white/40 line-through decoration-red-500/50 decoration-2">
                             Vous cherchez vos chiffres dans plusieurs outils, perdez du temps
                         </h4>
                     </div>
-                    <div className="hidden md:block w-px h-24 bg-gray-100" />
 
-                    <div className="md:hidden w-full h-px bg-gray-100" />
+                    <div className="hidden md:block w-px h-24 bg-white/10" />
+                    <div className="md:hidden w-full h-px bg-white/10" />
 
-                    <div className="flex-1 space-y-2">
+                    <div className="flex-1 space-y-2 relative z-10">
                         <span className="text-secondary font-bold uppercase text-xs tracking-widest">Après</span>
-                        <h4 className="text-2xl font-serif text-primary font-medium">
+                        <h4 className="text-2xl font-serif text-white font-medium">
                             Une méthode claire et simple pour tout centraliser et gagner en fiabilité
                         </h4>
                     </div>

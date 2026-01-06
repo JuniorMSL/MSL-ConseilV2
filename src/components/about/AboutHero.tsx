@@ -52,7 +52,7 @@ export default function AboutHero() {
             <div className="relative z-20 max-w-5xl text-center space-y-12 mt-20">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.1] tracking-tight">
                     <span className="reveal-text block">Nous aidons les PME à</span>
-                    <span className="reveal-text block">piloter leurs finances avec</span>
+                    <span className="reveal-text block">piloter leurs financess avec</span>
                     <span className="reveal-text block text-secondary italic">clarté et sérénité.</span>
                 </h1>
 

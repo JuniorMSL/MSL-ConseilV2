@@ -36,12 +36,12 @@ export default function MethodeHero() {
                 <span className="hero-animate block text-secondary font-bold uppercase tracking-[0.3em] text-xs mb-6">Page Méthode — MSL Conseils</span>
 
                 <h1 className="hero-animate text-5xl md:text-7xl lg:text-8xl font-serif mb-8 leading-tight">
-                    Vos finances sous <br />
+                    Vos financess sous <br />
                     <span className="text-secondary italic">contrôle. Enfin.</span>
                 </h1>
 
                 <p className="hero-animate text-lg md:text-xl text-white/90 font-light leading-relaxed max-w-3xl mx-auto mb-12">
-                    Oubliez les chiffres flous et les process manuels. Avec <strong className="text-white font-medium">P.I.L.O.T.E.R.</strong>, vos finances deviennent automatisées, sécurisées et lisibles en un coup d’œil.
+                    Oubliez les chiffres flous et les process manuels. Avec <strong className="text-white font-medium">P.I.L.O.T.E.R.</strong>, vos financess deviennent automatisées, sécurisées et lisibles en un coup d’œil.
                     <span className="block mt-4 text-secondary font-medium">
                         Moins de stress, plus de maîtrise, plus de temps pour développer votre entreprise.
                     </span>

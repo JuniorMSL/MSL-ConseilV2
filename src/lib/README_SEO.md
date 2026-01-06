@@ -183,7 +183,7 @@ export const metadata: Metadata = generateSEOMetadata({
   title: "Mon Service",
   description: "Description optimisée de mon service",
   url: "/ma-page",
-  keywords: ["service", "odoo", "finance"],
+  keywords: ["service", "odoo", "finances"],
 });
 
 // Fil d'Ariane

@@ -8,13 +8,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = generateSEOMetadata({
     title: "À Propos",
-    description: "Découvrez MSL Conseils, votre expert Odoo Finance en Belgique et au Maroc. Notre mission : piloter votre croissance avec excellence et expertise.",
+    description: "Découvrez MSL Conseils, votre expert Odoo Finances en Belgique et au Maroc. Notre mission : piloter votre croissance avec excellence et expertise.",
     url: "/about",
     keywords: [
         "MSL Conseils",
         "Expert Odoo",
-        "Finance Belgique",
-        "Finance Maroc",
+        "finances Belgique",
+        "finances Maroc",
         "Mission",
         "Valeurs",
     ],

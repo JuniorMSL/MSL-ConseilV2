@@ -37,7 +37,7 @@ export default function SolutionsCTA() {
 
                 <div className="relative z-10">
                     <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">
-                        Prêt à transformer vos finances ?
+                        Prêt à transformer vos financess ?
                     </h2>
                     <p className="text-white/70 text-lg mb-12 max-w-xl mx-auto">
                         Discutons de vos besoins et voyons comment MSL peut vous aider à atteindre la clarté financière.
@@ -45,7 +45,7 @@ export default function SolutionsCTA() {
 
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <button className="px-10 py-5 bg-white text-primary rounded-full font-bold uppercase tracking-wider text-xs hover:bg-secondary transition-colors duration-300 shadow-xl hover:scale-105">
-                            Demander votre diagnostic Odoo Finance
+                            Demander votre diagnostic Odoo Finances
                         </button>
                         <button className="px-10 py-5 border border-white/20 text-white rounded-full font-bold uppercase tracking-wider text-xs hover:bg-white/10 transition-colors duration-300">
                             Parler à un consultant MSL

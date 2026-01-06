@@ -3,16 +3,16 @@ import type { Metadata } from 'next';
 // Configuration de base du site
 export const siteConfig = {
     name: 'MSL Conseils',
-    description: 'Expert Odoo Finance en Belgique et au Maroc. Pilotez votre croissance avec notre méthode P.I.L.O.T.E.R.',
+    description: 'Expert Odoo Finances en Belgique et au Maroc. Pilotez votre croissance avec notre méthode P.I.L.O.T.E.R.',
     url: 'https://www.msl-conseils.com', // À remplacer par votre URL réelle
     ogImage: '/og-image.jpg',
     locale: 'fr_FR',
     type: 'website',
     keywords: [
-        'Odoo Finance',
+        'Odoo Finances',
         'Expert Odoo Belgique',
         'Expert Odoo Maroc',
-        'Conseil Finance',
+        'Conseil finances',
         'Méthode PILOTER',
         'Croissance entreprise',
         'Gestion financière',

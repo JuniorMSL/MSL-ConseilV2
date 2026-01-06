@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const CHECKLISTS = [
     {
-        title: "Implémentation Odoo Finance",
+        title: "Implémentation Odoo Finances",
         items: ["Audit des flux existants", "Architecture du Plan Comptable", "Reprise des historiques", "Tests de validation"],
         color: "bg-primary text-white",
         icon: (

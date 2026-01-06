@@ -25,7 +25,7 @@ Composants utilisés:
 - `PiloterMethod` - Aperçu de la méthode P.I.L.O.T.E.R.
 - `ResultsSection` - Résultats et statistiques
 - `SixReasons` - 6 raisons de nous choisir
-- `ComplementaryServices` - Services complémentaires & CTA final
+- `ComplementaryServices` - Services complémentaires MSL Conseils & CTA final
 
 ---
 
@@ -164,7 +164,7 @@ Composants utilisés:
 ### Liens à corriger/configurer:
 - ✅ Liens sociaux (LinkedIn, YouTube) - actuellement `href="#"`
 - ✅ Lien "Tous les articles" dans ResourceArticles - actuellement `href="#"`
-- ✅ Lien "Parler à un expert Odoo Finance" - actuellement `href="#"`
+- ✅ Lien "Parler à un expert Odoo Finances" - actuellement `href="#"`
 - ✅ Lien WhatsApp dans ContactContent - actuellement `href="#"`
 - ✅ Boutons CTA dans AboutPage - utiliser des `Link` au lieu de `button`
 - ✅ Liens légaux (Politique de confidentialité, Mentions légales) - actuellement `href="#"`

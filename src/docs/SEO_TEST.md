@@ -10,7 +10,7 @@ Ouvrir chaque page et inspecter le code source (Ctrl+U / Cmd+Option+U) :
 **Page d'accueil (`/`)**
 ```html
 <title>Accueil | MSL Conseils</title>
-<meta name="description" content="Expert Odoo Finance en Belgique et au Maroc...">
+<meta name="description" content="Expert Odoo Finances en Belgique et au Maroc...">
 <meta property="og:title" content="Accueil | MSL Conseils">
 <meta property="og:image" content="https://www.msl-conseils.com/og-image.jpg">
 ```
@@ -18,7 +18,7 @@ Ouvrir chaque page et inspecter le code source (Ctrl+U / Cmd+Option+U) :
 **Page À Propos (`/about`)**
 ```html
 <title>À Propos | MSL Conseils</title>
-<meta name="description" content="Découvrez MSL Conseils, votre expert Odoo Finance...">
+<meta name="description" content="Découvrez MSL Conseils, votre expert Odoo Finances...">
 ```
 
 **Page Méthode (`/methode`)**
@@ -76,7 +76,7 @@ Ouvrir chaque page et inspecter le code source (Ctrl+U / Cmd+Option+U) :
 ```
 URL: https://www.msl-conseils.com/
 Titre attendu: Accueil | MSL Conseils
-Description: Expert Odoo Finance en Belgique et au Maroc...
+Description: Expert Odoo Finances en Belgique et au Maroc...
 Image: /og-image.jpg
 ```
 

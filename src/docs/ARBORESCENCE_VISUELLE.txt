@@ -13,7 +13,7 @@ MSL CONSEIL V2 - ARBORESCENCE DU SITE
 │  ▸ PiloterMethod       - Aperçu de la méthode P.I.L.O.T.E.R.│
 │  ▸ ResultsSection      - Résultats et statistiques          │
 │  ▸ SixReasons          - 6 raisons de nous choisir          │
-│  ▸ ComplementaryServices - Services complémentaires + CTA   │
+│  ▸ ComplementaryServices - Services complémentaires MSL Conseils + CTA   │
 └─────────────────────────────────────────────────────────────┘
            │
            ├──────────────────────────────────────────────────┐
@@ -105,7 +105,7 @@ Toutes les Call-To-Action principales du site:
 1. "Diagnostic Gratuit" ───────────────► /contact ✅
 2. "Découvrir la méthode P.I.L.O.T.E.R." ► /solutions ✅
 3. "Parler à un expert" ───────────────► /contact ✅
-4. "Parler à un expert Odoo Finance" ──► /contact ✅
+4. "Parler à un expert Odoo Finances" ──► /contact ✅
 5. "Demander votre diagnostic gratuit" ► /contact ✅
 6. "Réserver mon audit gratuit" ───────► /contact ✅
 7. WhatsApp Direct ────────────────────► https://wa.me/... ✅

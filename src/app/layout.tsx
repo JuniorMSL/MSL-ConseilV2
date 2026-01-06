@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} - Expert Odoo Finance Belgique & Maroc`,
+    default: `${siteConfig.name} - Expert Odoo Finances Belgique & Maroc`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: siteConfig.locale,
     url: siteConfig.url,
-    title: `${siteConfig.name} - Expert Odoo Finance Belgique & Maroc`,
+    title: `${siteConfig.name} - Expert Odoo Finances Belgique & Maroc`,
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} - Expert Odoo Finance Belgique & Maroc`,
+    title: `${siteConfig.name} - Expert Odoo Finances Belgique & Maroc`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
     creator: siteConfig.social.twitter,

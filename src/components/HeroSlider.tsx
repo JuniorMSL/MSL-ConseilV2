@@ -9,11 +9,11 @@ import gsap from "gsap";
 const SLIDES = [
     {
         id: 1,
-        title: <>Pilotez vos finances dans Odoo avec <span className="text-secondary">clarté, méthode et sérénité.</span></>,
+        title: <>Pilotez vos financess dans Odoo avec <span className="text-secondary">clarté, méthode et sérénité.</span></>,
         subtitle: "Nous structurons, sécurisons et optimisons votre département financier dans Odoo — sans remplacer votre équipe, sans faire votre comptabilité.",
         location: "Bruxelles & Marrakech",
         benefit: "Moins de tensions. Plus de clarté. Un pilotage enfin maîtrisé.",
-        ctaPrimary: "Demander un diagnostic Odoo Finance",
+        ctaPrimary: "Demander un diagnostic Odoo Finances",
         ctaPrimaryLink: "/contact",
         ctaSecondary: "Parler à un consultant MSL",
         ctaSecondaryLink: "/contact",
@@ -35,7 +35,7 @@ const SLIDES = [
     },
     {
         id: 3,
-        title: "Maîtrisez la puissance d'Odoo Finance sans la complexité.",
+        title: "Maîtrisez la puissance d'Odoo Finances sans la complexité.",
         subtitle: "Des tableaux de bord précis, une comptabilité fluide et des processus automatisés pour vous concentrer sur l'essentiel : votre business.",
         location: "Intégration sur mesure",
         benefit: "Gagnez du temps. Réduisez les erreurs. Prenez les bonnes décisions.",

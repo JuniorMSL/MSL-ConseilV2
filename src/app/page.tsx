@@ -11,13 +11,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = generateSEOMetadata({
   title: "Accueil",
-  description: "Expert Odoo Finance en Belgique et au Maroc. Découvrez notre méthode P.I.L.O.T.E.R. pour piloter votre croissance et optimiser votre gestion financière.",
+  description: "Expert Odoo Finances en Belgique et au Maroc. Découvrez notre méthode P.I.L.O.T.E.R. pour piloter votre croissance et optimiser votre gestion financière.",
   url: "/",
   keywords: [
-    "Odoo Finance",
+    "Odoo Finances",
     "Expert Odoo Belgique",
     "Expert Odoo Maroc",
-    "Conseil Finance",
+    "Conseil finances",
     "Méthode PILOTER",
     "Croissance entreprise",
     "Gestion financière",

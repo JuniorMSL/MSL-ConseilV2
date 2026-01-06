@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'MSL Conseils - Expert Odoo Finance',
+        name: 'MSL Conseils - Expert Odoo Finances',
         short_name: 'MSL Conseils',
-        description: 'Expert Odoo Finance en Belgique et au Maroc',
+        description: 'Expert Odoo Finances en Belgique et au Maroc',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',

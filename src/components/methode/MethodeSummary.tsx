@@ -50,10 +50,19 @@ export default function MethodeSummary() {
 
                 <div className="grid grid-cols-2 lg:grid-cols-5 gap-6">
                     {BENEFITS.map((item, i) => (
-                        <div key={i} className="why-item bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-transparent hover:border-secondary/20">
-                            <div className="w-3 h-3 bg-secondary rounded-full mx-auto mb-4" />
-                            <h3 className="text-xl font-bold text-primary mb-2">{item.title}</h3>
-                            <p className="text-sm text-gray-500">{item.text}</p>
+                        <div
+                            key={i}
+                            className={`why-item p-8 rounded-2xl text-center shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-transparent
+                                ${i % 2 === 0 ? 'bg-primary text-white' : 'bg-secondary text-primary'}
+                            `}
+                        >
+                            <div className={`w-3 h-3 rounded-full mx-auto mb-6 ${i % 2 === 0 ? 'bg-secondary' : 'bg-primary'}`} />
+                            <h3 className={`text-xl font-bold mb-3 ${i % 2 === 0 ? 'text-white' : 'text-primary'}`}>
+                                {item.title}
+                            </h3>
+                            <p className={`text-sm font-medium leading-relaxed ${i % 2 === 0 ? 'text-white/70' : 'text-primary/80'}`}>
+                                {item.text}
+                            </p>
                         </div>
                     ))}
                 </div>

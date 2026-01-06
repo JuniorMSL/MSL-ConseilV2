@@ -15,7 +15,7 @@ const RESOURCES = [
         bg: "bg-[#f8f9fa]",
         text: "text-primary",
         accent: "bg-secondary",
-        description: "Des ressources pas-à-pas pour maîtriser Odoo Finance.",
+        description: "Des ressources pas-à-pas pour maîtriser Odoo Finances.",
         items: [
             "Checklists pour automatiser vos processus",
             "Tutoriels pas-à-pas pour configurer Odoo",
@@ -86,7 +86,7 @@ const RESOURCES = [
         accent: "bg-primary",
         description: "Passez à l'action immédiatement.",
         items: [
-            "Checklist d’implémentation Odoo Finance",
+            "Checklist d’implémentation Odoo Finances",
             "Checklist de suivi et pilotage mensuel",
             "Checklist de formation des équipes"
         ],

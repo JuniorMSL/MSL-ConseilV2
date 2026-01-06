@@ -22,7 +22,7 @@ const SERVICES = [
         id: 2,
         number: "02",
         title: "Automatisation",
-        description: "Des processus finance fluides et sans tâches manuelles inutiles.",
+        description: "Des processus finances fluides et sans tâches manuelles inutiles.",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop",
         size: "large"
     },
@@ -120,7 +120,7 @@ export default function AboutServices() {
 
                     <p className="text-white/60 text-sm italic mb-10 border-l-2 border-secondary pl-4 py-1">
                         Nous ne faisons pas votre comptabilité.
-                        Si vous avez besoin d’un fiduciaire, nous vous orientons vers notre partenaire <span className="text-white font-semibold">OddoFinance</span>.
+                        Si vous avez besoin d’un fiduciaire, nous vous orientons vers notre partenaire <span className="text-white font-semibold">Oddofinances</span>.
                     </p>
 
                     <div className="flex flex-col sm:flex-col gap-4">

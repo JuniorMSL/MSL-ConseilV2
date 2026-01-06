@@ -14,11 +14,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = generateSEOMetadata({
     title: "Nos Solutions",
-    description: "Découvrez nos solutions Odoo Finance personnalisées pour votre entreprise en Belgique et au Maroc. Optimisez votre gestion financière avec nos experts.",
+    description: "Découvrez nos solutions Odoo Finances personnalisées pour votre entreprise en Belgique et au Maroc. Optimisez votre gestion financière avec nos experts.",
     url: "/solutions",
     keywords: [
         "Solutions Odoo",
-        "Finance entreprise",
+        "finances entreprise",
         "ERP Odoo",
         "Gestion financière",
         "Comptabilité Odoo",
