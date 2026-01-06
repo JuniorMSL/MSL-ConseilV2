@@ -143,7 +143,7 @@ echo ""
 echo "⚙️  VÉRIFICATION DE LA CONFIGURATION"
 echo "────────────────────────────────────────────────────"
 
-check_content "src/lib/seo.ts" "https://www.msl-conseils.com" "URL du site configurée"
+check_content "src/lib/seo.ts" "https://www.odoo-finances.pro" "URL du site configurée"
 check_content "src/lib/seo.ts" "contact@" "Email de contact"
 check_content "src/lib/seo.ts" "linkedin.com" "Lien LinkedIn"
 

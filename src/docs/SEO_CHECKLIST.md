@@ -3,7 +3,7 @@
 ## 📋 Configuration de base
 
 ### ⚙️ Fichier src/lib/seo.ts
-- [ ] URL du site mise à jour (remplacer `https://www.msl-conseils.com`)
+- [ ] URL du site mise à jour (remplacer `https://www.odoo-finances.pro`)
 - [ ] Email de contact ajouté (`contact@msl-conseils.com`)
 - [ ] Numéro de téléphone ajouté
 - [ ] Lien LinkedIn ajouté

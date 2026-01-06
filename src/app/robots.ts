@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/api/', '/admin/', '/_next/'],
             },
         ],
-        sitemap: 'https://www.msl-conseils.com/sitemap.xml', // À remplacer par votre URL réelle
+        sitemap: 'https://www.odoo-finances.pro/sitemap.xml', // À remplacer par votre URL réelle
     };
 }
