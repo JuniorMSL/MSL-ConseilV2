@@ -77,7 +77,7 @@ export default function BenefitsGrid() {
                     Découvrez ce que vous gagnez immédiatement
                 </h2>
                 <p className="text-white/60 text-lg">
-                    Des financess claires, des tâches automatisées, un pilotage sans stress grâce à Odoo.
+                    Des finances claires, des tâches automatisées, un pilotage sans stress grâce à Odoo.
                 </p>
             </div>
 

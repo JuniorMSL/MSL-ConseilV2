@@ -40,7 +40,7 @@
    - Inclure le logo et un message accrocheur
 
 2. **Mettre à jour l'URL du site**
-   - Dans `/src/lib/seo.ts`, remplacer `https://www.msl-conseils.com` par votre URL réelle
+   - Dans `/src/lib/seo.ts`, remplacer `https://www.odoo-finances.pro` par votre URL réelle
    - Mettre à jour dans `/src/app/robots.ts` également
 
 3. **Ajouter les icônes PWA**

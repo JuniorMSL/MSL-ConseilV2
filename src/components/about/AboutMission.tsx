@@ -114,7 +114,7 @@ export default function AboutMission() {
                     <div className="space-y-8">
                         <span className="text-reveal block text-xs font-bold uppercase tracking-[0.3em] text-secondary">Notre Mission</span>
                         <h2 className="text-reveal text-4xl lg:text-6xl font-serif text-primary leading-[1.1]">
-                            Simplifier, fiabiliser et automatiser vos financess.
+                            Simplifier, fiabiliser et automatiser vos finances.
                         </h2>
                         <p className="text-reveal text-xl text-gray-500 font-light max-w-lg">
                             Pour vous permettre de décider <span className="text-secondary font-medium">sans stress</span>.

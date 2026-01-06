@@ -37,7 +37,7 @@ export default function SolutionsCTA() {
 
                 <div className="relative z-10">
                     <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">
-                        Prêt à transformer vos financess ?
+                        Prêt à transformer vos finances ?
                     </h2>
                     <p className="text-white/70 text-lg mb-12 max-w-xl mx-auto">
                         Discutons de vos besoins et voyons comment MSL peut vous aider à atteindre la clarté financière.

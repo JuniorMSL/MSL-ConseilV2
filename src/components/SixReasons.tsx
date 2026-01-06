@@ -119,7 +119,7 @@ export default function SixReasons() {
                             <span className="italic text-secondary">MSL Conseils</span>
                         </h2>
                         <p className="mt-6 text-gray-500 text-lg">
-                            Pour piloter vos financess dans Odoo avec clarté, méthode et sérénité.
+                            Pour piloter vos finances dans Odoo avec clarté, méthode et sérénité.
                         </p>
                     </div>
 

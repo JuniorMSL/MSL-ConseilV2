@@ -19,7 +19,7 @@ Objet contenant toutes les informations de base du site :
 export const siteConfig = {
   name: 'MSL Conseils',
   description: '...',
-  url: 'https://www.msl-conseils.com',
+  url: 'https://www.odoo-finances.pro',
   ogImage: '/og-image.jpg',
   locale: 'fr_FR',
   type: 'website',

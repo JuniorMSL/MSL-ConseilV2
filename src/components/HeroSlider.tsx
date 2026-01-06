@@ -9,7 +9,7 @@ import gsap from "gsap";
 const SLIDES = [
     {
         id: 1,
-        title: <>Pilotez vos financess dans Odoo avec <span className="text-secondary">clarté, méthode et sérénité.</span></>,
+        title: <>Pilotez vos finances dans Odoo avec <span className="text-secondary">clarté, méthode et sérénité.</span></>,
         subtitle: "Nous structurons, sécurisons et optimisons votre département financier dans Odoo — sans remplacer votre équipe, sans faire votre comptabilité.",
         location: "Bruxelles & Marrakech",
         benefit: "Moins de tensions. Plus de clarté. Un pilotage enfin maîtrisé.",

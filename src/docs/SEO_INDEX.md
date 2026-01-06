@@ -59,7 +59,7 @@ MSL Conseils v2/
 
 ### 2. Configurer les informations de base
 Éditer `/src/lib/seo.ts` :
-- URL du site (remplacer `https://www.msl-conseils.com`)
+- URL du site (remplacer `https://www.odoo-finances.pro`)
 - Email de contact
 - Numéro de téléphone
 - Liens réseaux sociaux

@@ -114,7 +114,7 @@ Mise en place complète du référencement naturel (SEO) pour l'application MSL 
 ### Immédiat (à faire maintenant)
 1. **Mettre à jour l'URL du site**
    - Fichier : `/src/lib/seo.ts`
-   - Remplacer : `https://www.msl-conseils.com` par votre URL réelle
+   - Remplacer : `https://www.odoo-finances.pro` par votre URL réelle
 
 2. **Créer l'image Open Graph**
    - Chemin : `/public/og-image.jpg`

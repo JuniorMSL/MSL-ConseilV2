@@ -36,7 +36,7 @@ const contactPageSchema = {
   "@type": "ContactPage",
   name: "Contact - MSL Conseils",
   description: "Contactez-nous pour un diagnostic gratuit",
-  url: "https://www.msl-conseils.com/contact",
+  url: "https://www.odoo-finances.pro/contact",
 };
 
 export default function ContactPage() {

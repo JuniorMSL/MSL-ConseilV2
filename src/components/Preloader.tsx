@@ -110,7 +110,7 @@ export default function Preloader() {
                         MSL Conseils
                     </h2>
                     <p className="text-xs md:text-sm text-secondary/80 font-mono tracking-widest uppercase">
-                        Expertise Odoo & financess
+                        Expertise Odoo & finances
                     </p>
                 </div>
 

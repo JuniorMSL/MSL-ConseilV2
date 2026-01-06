@@ -12,7 +12,7 @@ Ouvrir chaque page et inspecter le code source (Ctrl+U / Cmd+Option+U) :
 <title>Accueil | MSL Conseils</title>
 <meta name="description" content="Expert Odoo Finances en Belgique et au Maroc...">
 <meta property="og:title" content="Accueil | MSL Conseils">
-<meta property="og:image" content="https://www.msl-conseils.com/og-image.jpg">
+<meta property="og:image" content="https://www.odoo-finances.pro/og-image.jpg">
 ```
 
 **Page À Propos (`/about`)**
@@ -74,7 +74,7 @@ Ouvrir chaque page et inspecter le code source (Ctrl+U / Cmd+Option+U) :
 
 #### Exemple de test
 ```
-URL: https://www.msl-conseils.com/
+URL: https://www.odoo-finances.pro/
 Titre attendu: Accueil | MSL Conseils
 Description: Expert Odoo Finances en Belgique et au Maroc...
 Image: /og-image.jpg
@@ -117,7 +117,7 @@ Disallow: /api/
 Disallow: /admin/
 Disallow: /_next/
 
-Sitemap: https://www.msl-conseils.com/sitemap.xml
+Sitemap: https://www.odoo-finances.pro/sitemap.xml
 ```
 
 ---

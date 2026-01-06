@@ -37,7 +37,7 @@ export default function SolutionsHero() {
 
                 <h1 className="hero-reveal text-4xl md:text-6xl lg:text-7xl font-serif mb-8 leading-[1.1]">
                     Des solutions simples pour <br />
-                    <span className="italic text-secondary">reprendre le contrôle</span> de vos financess.
+                    <span className="italic text-secondary">reprendre le contrôle</span> de vos finances.
                 </h1>
 
                 <p className="hero-reveal text-lg md:text-xl text-white/70 font-light leading-relaxed max-w-3xl mx-auto mb-12">
