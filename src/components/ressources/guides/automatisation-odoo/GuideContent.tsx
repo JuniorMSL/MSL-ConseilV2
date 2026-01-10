@@ -707,20 +707,31 @@ export default function GuideContent({ onStartQuiz }: GuideContentProps) {
                 </div>
 
                 {/* CTA Test */}
-                <div className="mt-20 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden" style={{ background: `linear-gradient(135deg, ${ODOO_PURPLE} 0%, #8e6180 100%)` }}>
+                <div id="diagnostic" className="mt-20 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden scroll-mt-24" style={{ background: `linear-gradient(135deg, ${ODOO_PURPLE} 0%, #8e6180 100%)` }}>
                     <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
                     <div className="relative z-10">
                         <span className="inline-block bg-secondary/20 text-secondary text-sm font-semibold px-4 py-1.5 rounded-full mb-6">🧪 Test Interactif</span>
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                             Évaluez votre maturité en automatisation et pilotage
                         </h2>
-                        <p className="text-white/70 max-w-xl mx-auto mb-8">
+                        <p className="text-white/70 max-w-xl mx-auto mb-4">
                             31 questions, 6 sections thématiques, score personnalisé avec diagnostic par chapitre et plan d&apos;action sur mesure.
                         </p>
+
+                        {/* Social proof - Guide 2 specific */}
+                        <p className="text-white/50 text-sm mb-6 max-w-md mx-auto">
+                            💡 Ce diagnostic est souvent utilisé entre dirigeants de PME pour comparer leur niveau d&apos;automatisation et de pilotage.
+                        </p>
+
                         <button onClick={onStartQuiz} className="inline-flex items-center gap-3 bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-lg active:scale-[0.98]">
                             Commencer le diagnostic
                             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                         </button>
+
+                        {/* Badge de crédibilité - Guide 2 specific */}
+                        <p className="text-white/40 text-xs mt-6 flex items-center justify-center gap-2 italic">
+                            Diagnostic avancé – réservé aux PME structurées
+                        </p>
                     </div>
                 </div>
             </div>

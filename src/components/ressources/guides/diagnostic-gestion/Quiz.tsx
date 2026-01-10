@@ -80,17 +80,21 @@ export default function Quiz({ onComplete, onBack, userName }: QuizProps) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [answers, setAnswers] = useState<Record<string, number>>({});
 
-    useGSAP(() => {
-        gsap.fromTo(".quiz-question", { x: 30, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "power3.out" });
-    }, { scope: containerRef, dependencies: [currentBlock, currentQuestion] });
-
     const block = QUIZ_BLOCKS[currentBlock];
-    const question = block.questions[currentQuestion];
+    const question = block?.questions[currentQuestion];
     const totalQuestions = QUIZ_BLOCKS.reduce((acc, b) => acc + b.questions.length, 0);
     const answeredCount = Object.keys(answers).length;
     const progress = Math.round((answeredCount / totalQuestions) * 100);
 
+    useGSAP(() => {
+        if (question) {
+            gsap.fromTo(".quiz-question", { x: 30, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "power3.out" });
+        }
+    }, { scope: containerRef, dependencies: [currentBlock, currentQuestion] });
+
     const handleAnswer = (value: number) => {
+        if (!question) return;
+
         setAnswers(prev => ({ ...prev, [question.id]: value }));
 
         // Next question or block
@@ -112,10 +116,19 @@ export default function Quiz({ onComplete, onBack, userName }: QuizProps) {
         return [{ label: "Oui ✓", value: 1 }, { label: "Non ✗", value: 0 }, { label: "Je ne sais pas", value: 0 }];
     };
 
+    // Safety check
+    if (!block || !question) {
+        return (
+            <div className="w-full min-h-screen bg-gray-50 flex items-center justify-center">
+                <p className="text-gray-500">Chargement du quiz...</p>
+            </div>
+        );
+    }
+
     return (
-        <div ref={containerRef} className="w-full min-h-screen bg-gray-50">
+        <div ref={containerRef} className="w-full min-h-screen bg-gray-50 pt-20">
             {/* Header */}
-            <div className="sticky top-20 z-40 bg-white border-b border-gray-100 shadow-sm">
+            <div className="sticky top-20 z-30 bg-white border-b border-gray-100 shadow-sm">
                 <div className="max-w-3xl mx-auto px-6 py-4">
                     <div className="flex items-center justify-between mb-3">
                         <button onClick={onBack} className="flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700">

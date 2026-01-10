@@ -1,0 +1,9 @@
+export { default as PartenairesHero } from './PartenairesHero';
+export { default as PartenairesWhy } from './PartenairesWhy';
+export { default as PartenairesPositioning } from './PartenairesPositioning';
+export { default as PartenairesServices } from './PartenairesServices';
+export { default as PartenairesCollaboration } from './PartenairesCollaboration';
+export { default as PartenairesPricing } from './PartenairesPricing';
+export { default as PartenairesUseCases } from './PartenairesUseCases';
+export { default as PartenairesWhyUs } from './PartenairesWhyUs';
+export { default as PartenairesCTA } from './PartenairesCTA';

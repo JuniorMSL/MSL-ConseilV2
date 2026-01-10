@@ -18,7 +18,8 @@ const NAV_LINKS = [
     { label: "Méthode", href: "/methode" },
     { label: "FAQ", href: "/faq" },
     { label: "Bootcamp", href: "/bootcamp" },
-    { label: "Contact", href: "/contact" }
+    { label: "Contact", href: "/contact" },
+    {label: "Partenaires", href: "/partenaires"}
 ];
 
 export default function Header() {

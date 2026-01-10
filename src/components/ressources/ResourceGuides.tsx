@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const GUIDES = [
     {
-        title: "Mise en place de la comptabilité PME",
+        title: "Mise en place de la comptabilité pour PME",
         category: "Formation Complète",
         desc: "2 E-books + 2 tests interactifs. 11 chapitres, 48 questions. De la structuration à l'automatisation avec Odoo.",
         image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop",
@@ -31,7 +31,7 @@ const GUIDES = [
         stats: { ebooks: 2, chapters: 20, questions: 12 }
     },
     {
-        title: "Êtes-vous prêt à automatiser votre finance ?",
+        title: "Êtes-vous prêt à automatiser vos finances ?",
         category: "Diagnostic",
         desc: "5 étapes structurées pour faire le point sur vos processus et identifier les axes d'automatisation. Checklist PDF/Excel incluse.",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop",
@@ -78,7 +78,7 @@ export default function ResourceGuides() {
     }, { scope: container, dependencies: [isMounted] });
 
     return (
-        <section ref={container} className="w-full py-24 px-6 md:px-12 bg-gray-50" suppressHydrationWarning>
+        <section id="guides" ref={container} className="w-full py-24 px-6 md:px-12 bg-gray-50" suppressHydrationWarning>
 
             <div className="max-w-7xl mx-auto">
                 <div className="mb-16 text-center">

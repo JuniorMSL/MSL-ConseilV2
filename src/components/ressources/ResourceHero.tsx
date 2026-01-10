@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ResourceHero() {
     const container = useRef<HTMLElement>(null);
@@ -68,20 +69,20 @@ export default function ResourceHero() {
 
                 {/* CTAs */}
                 <div ref={ctaRef} className="flex flex-col sm:flex-row gap-6">
-                    <button className="group relative px-8 py-4 bg-secondary text-primary rounded-full font-medium text-sm transition-all hover:scale-105 hover:shadow-xl shadow-lg shadow-secondary/20 overflow-hidden">
+                    <Link href="#guides" className="group relative px-8 py-4 bg-secondary text-primary rounded-full font-medium text-sm transition-all hover:scale-105 hover:shadow-xl shadow-lg shadow-secondary/20 overflow-hidden">
                         <span className="relative z-10 flex items-center gap-2">
-                            Télécharger nos guides
+                            Consulter nos guides
                             <svg className="w-4 h-4 transition-transform group-hover:translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                             </svg>
                         </span>
-                    </button>
-                    <button className="group px-8 py-4 bg-transparent text-white border border-white/20 rounded-full font-medium text-sm transition-all hover:border-white hover:bg-white/5 flex items-center gap-2">
+                    </Link>
+                    {/* <button className="group px-8 py-4 bg-transparent text-white border border-white/20 rounded-full font-medium text-sm transition-all hover:border-white hover:bg-white/5 flex items-center gap-2">
                         Consulter nos études de cas
                         <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
-                    </button>
+                    </button> */}
                 </div>
             </div>
 

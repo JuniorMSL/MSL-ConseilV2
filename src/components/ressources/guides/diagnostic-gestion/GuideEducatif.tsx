@@ -331,16 +331,30 @@ export default function GuideEducatif({ onStartDiagnostic }: GuideContentProps) 
                 </div>
 
                 {/* CTA Diagnostic */}
-                <div className="mt-20 bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+                <div id="diagnostic" className="mt-20 bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden scroll-mt-24">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
                     <div className="relative z-10">
                         <span className="inline-block bg-secondary/20 text-secondary text-sm font-semibold px-4 py-1.5 rounded-full mb-6">🧪 Test Interactif</span>
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Évaluez votre maturité comptable en 2 minutes</h2>
-                        <p className="text-white/70 max-w-xl mx-auto mb-8">17 questions, 4 blocs thématiques, score personnalisé et recommandations basées sur VOS réponses.</p>
+                        <p className="text-white/70 max-w-xl mx-auto mb-4">17 questions, 4 blocs thématiques, score personnalisé et recommandations basées sur VOS réponses.</p>
+
+                        {/* Social proof - Point 5 */}
+                        <p className="text-white/50 text-sm mb-6 max-w-md mx-auto">
+                            💡 Ce diagnostic est souvent partagé entre entrepreneurs pour comparer leur organisation et échanger de bonnes pratiques.
+                        </p>
+
                         <button onClick={onStartDiagnostic} className="inline-flex items-center gap-3 bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-lg active:scale-[0.98]">
                             Commencer le diagnostic
                             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                         </button>
+
+                        {/* Badge de crédibilité - Point 6 */}
+                        <p className="text-white/40 text-xs mt-6 flex items-center justify-center gap-2">
+                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Recommandé par d&apos;autres entrepreneurs pour évaluer leur organisation comptable
+                        </p>
                     </div>
                 </div>
             </div>
